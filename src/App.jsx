@@ -10,7 +10,6 @@ function App() {
     <Route path="/" element={<LandingPage/>}/>
       <Route path="/landingPage" element={<LandingPage/>}/>
       <Route path="/quizpage" element={<QuizPage/>}/>
-
     </Routes>
     </BrowserRouter>
 
