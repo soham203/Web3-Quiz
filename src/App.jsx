@@ -1,12 +1,17 @@
-
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import LandingPage from './pages/LandingPage.jsx';
+import QuizPage from './pages/Quizpage';
 function App() {
 
   return (
-    <>
-     <div className='bg-red-400'>
-      devansh  bhadva
-     </div>
-    </>
+    <BrowserRouter>
+    <Routes>
+    <Route path="/" element={<LandingPage/>}/>
+      <Route path="/landingPage" element={<LandingPage/>}/>
+      <Route path="/quizpage" element={<QuizPage/>}/>
+
+    </Routes>
+    </BrowserRouter>
   )
 }
 
