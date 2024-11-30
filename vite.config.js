@@ -10,4 +10,4 @@ export default defineConfig({
   server: {
     historyApiFallback: true, // Helps in local dev
   },
-})
+});
