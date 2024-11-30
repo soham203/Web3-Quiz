@@ -5,15 +5,16 @@ import Navbar from './components/Navbar.jsx';
 function App() {
 
   return (
+
     <BrowserRouter>
       <Navbar/>
     <Routes>
     <Route path="/" element={<LandingPage/>}/>
       <Route path="/landingPage" element={<LandingPage/>}/>
       <Route path="/quizpage" element={<QuizPage/>}/>
-
     </Routes>
     </BrowserRouter>
+
   )
 }
 
