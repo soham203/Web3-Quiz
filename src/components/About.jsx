@@ -3,7 +3,7 @@ import React from 'react';
 const About = ({ showAbout, toggleAbout }) => {
   if (!showAbout) return null;
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex justify-center items-center z-50">
+    <div className="fixed inset-0 bg-black bg-opacity-80 backdrop-blur-sm flex justify-center items-center z-50">
       <div className="bg-white p-6 rounded-lg max-w-[90%] md:max-w-[50%] text-center">
         <h2 className="text-2xl font-bold text-[#8E44AD] mb-4">About QuizChain</h2>
         <p className="text-gray-700 mb-6 text-lg text-start">
