@@ -1,23 +1,29 @@
 import React from 'react'
-import { Typewriter } from 'react-simple-typewriter';
+// import quizData from '../data/quizData.json'
 
-function Quizpage() {
+const QuizApp = () => {
   return (
-    <div className='text-white bg-black  md:text-4xl sm:text-4xl text-xl py-4 lg:text-5xl items-center h-screen font-extrabold flex justify-center align-middle'>
-      <p>LAUNCHING SOON,</p>
-      <div className='pl-2'>
-      <Typewriter
-        words={['GOOD', 'THINGS', 'TAKE', 'TIME', 'TO', 'HAPPEN']}
-        loop={true}
-        typeSpeed={120}
-        deleteSpeed={140}
-        delaySpeed={1000}
-        cursor
-        cursorStyle="_"
-        />
-        </div>
-    </div>
+   <div className='bg-black h-screen flex items-center justify-center '>
+    <div className='backdrop-blur-sm bg-opacity-50  w-3/6 h-fit gap-4 flex flex-col items-center justify-center'>
+      <div className="bg-gray-600 w-3/6 p-4 flex justify-between rounded-lg">
+      <p>Solidity</p>
+      <button>arrow</button>
+      </div>
+      <div className="bg-gray-600 w-3/6 p-4 flex justify-between rounded-lg">
+      <p>Solidity</p>
+      <button>arrow</button>
+      </div>
+      <div className="bg-gray-600 w-3/6 p-4 flex justify-between rounded-lg">
+      <p>Solidity</p>
+      <button>arrow</button>
+      </div>
+      <div className="bg-gray-600 w-3/6 p-4 flex justify-between rounded-lg">
+      <p>Solidity</p>
+      <button>arrow</button>
+      </div>
+      </div>
+   </div>
   )
-}
+};
 
-export default Quizpage
+export default QuizApp
