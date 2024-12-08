@@ -1,0 +1,16 @@
+{
+    "questions": [
+      {
+        "question": "What is a smart contract?",
+        "options": ["A physical document", "A blockchain program", "An NFT", "A cryptocurrency"],
+        "answer": "A blockchain program",
+        "type": "easy"
+      },
+      {
+        "question": "Which blockchain introduced Web3?",
+        "options": ["Bitcoin", "Ethereum", "Polkadot", "Cardano"],
+        "answer": "Ethereum",
+        "type": "easy"
+      }
+    ]
+}
