@@ -1,239 +1,125 @@
 {
-    "topics": [
-      {
-        "topic": "Solidity",
-        "questions": {
-          "easy": [
-            {
-              "question": "What is Solidity primarily used for?",
-              "options": ["Smart Contracts", "Web Development", "Data Analysis", "AI Models"],
-              "answer": "Smart Contracts"
-            },
-            {
-              "question": "Which blockchain platform is Solidity designed for?",
-              "options": ["Bitcoin", "Ethereum", "Solana", "Polkadot"],
-              "answer": "Ethereum"
-            }
-          ],
-          "medium": [
-            {
-              "question": "What is the default visibility of a state variable in Solidity?",
-              "options": ["Public", "Private", "Internal", "External"],
-              "answer": "Internal"
-            },
-            {
-              "question": "Which keyword is used in Solidity to define an immutable variable?",
-              "options": ["constant", "immutable", "final", "fixed"],
-              "answer": "immutable"
-            }
-          ],
-          "hard": [
-            {
-              "question": "What is the function of 'delegatecall' in Solidity?",
-              "options": [
-                "Transfers tokens",
-                "Calls another contract and keeps the caller's context",
-                "Destroys a contract",
-                "Updates a state variable"
-              ],
-              "answer": "Calls another contract and keeps the caller's context"
-            },
-            {
-              "question": "What is the significance of EVM's gas mechanism in Solidity?",
-              "options": [
-                "Measures network bandwidth",
-                "Ensures that transactions are free",
-                "Prevents infinite loops and excessive computation",
-                "Measures token supply"
-              ],
-              "answer": "Prevents infinite loops and excessive computation"
-            }
-          ]
-        }
-      },
-      {
-        "topic": "Rust",
-        "questions": {
-          "easy": [
-            {
-              "question": "Rust is primarily designed for what kind of programming?",
-              "options": ["System Programming", "Frontend Development", "Data Science", "Blockchain"],
-              "answer": "System Programming"
-            },
-            {
-              "question": "Which of the following is a key feature of Rust?",
-              "options": ["Memory safety", "Dynamic typing", "Garbage collection", "None of the above"],
-              "answer": "Memory safety"
-            }
-          ],
-          "medium": [
-            {
-              "question": "What does the 'ownership' concept in Rust help prevent?",
-              "options": ["Memory leaks", "Compilation errors", "Syntax issues", "Performance bottlenecks"],
-              "answer": "Memory leaks"
-            },
-            {
-              "question": "What is the purpose of Rust's 'Borrow Checker'?",
-              "options": [
-                "To check for syntax errors",
-                "To manage memory safety at compile time",
-                "To optimize code performance",
-                "To resolve circular dependencies"
-              ],
-              "answer": "To manage memory safety at compile time"
-            }
-          ],
-          "hard": [
-            {
-              "question": "What is the difference between 'Box<T>' and 'Rc<T>' in Rust?",
-              "options": [
-                "'Box<T>' is single ownership, while 'Rc<T>' allows multiple ownership.",
-                "'Box<T>' is for dynamic typing, 'Rc<T>' is for fixed size types.",
-                "'Box<T>' is for garbage collection, 'Rc<T>' is for async tasks.",
-                "'Box<T>' allows multiple ownership, 'Rc<T>' is single ownership."
-              ],
-              "answer": "'Box<T>' is single ownership, while 'Rc<T>' allows multiple ownership."
-            },
-            {
-              "question": "What does the 'async' keyword do in Rust?",
-              "options": [
-                "Enables garbage collection",
-                "Converts a function into a future",
-                "Defines a thread-safe operation",
-                "Improves compile time performance"
-              ],
-              "answer": "Converts a function into a future"
-            }
-          ]
-        }
-      },
-      {
-        "topic": "DeFi",
-        "questions": {
-          "easy": [
-            {
-              "question": "What does DeFi stand for?",
-              "options": [
-                "Decentralized Finance",
-                "Digital Finance",
-                "Deflationary Finance",
-                "Decentralized File Sharing"
-              ],
-              "answer": "Decentralized Finance"
-            },
-            {
-              "question": "Which platform is widely used in DeFi for smart contracts?",
-              "options": ["Bitcoin", "Ethereum", "Dogecoin", "Cardano"],
-              "answer": "Ethereum"
-            }
-          ],
-          "medium": [
-            {
-              "question": "What is a liquidity pool in DeFi?",
-              "options": [
-                "A pool of assets used to provide liquidity for trading",
-                "A backup reserve for tokens",
-                "An algorithm for mining tokens",
-                "A repository of transaction data"
-              ],
-              "answer": "A pool of assets used to provide liquidity for trading"
-            },
-            {
-              "question": "What is yield farming?",
-              "options": [
-                "Mining cryptocurrencies",
-                "Providing liquidity to earn rewards",
-                "Staking tokens to earn dividends",
-                "Buying low and selling high"
-              ],
-              "answer": "Providing liquidity to earn rewards"
-            }
-          ],
-          "hard": [
-            {
-              "question": "What is impermanent loss in DeFi?",
-              "options": [
-                "The loss incurred when withdrawing tokens from a liquidity pool due to price changes",
-                "A penalty for staking tokens",
-                "Loss of private keys",
-                "An error in smart contract execution"
-              ],
-              "answer": "The loss incurred when withdrawing tokens from a liquidity pool due to price changes"
-            },
-            {
-              "question": "What is the role of an automated market maker (AMM) in DeFi?",
-              "options": [
-                "To match buyers and sellers in a decentralized exchange",
-                "To control the supply of tokens",
-                "To dynamically set prices using a formula",
-                "To validate transactions on the blockchain"
-              ],
-              "answer": "To dynamically set prices using a formula"
-            }
-          ]
-        }
-      },
-      {
-        "topic": "Blockchain",
-        "questions": {
-          "easy": [
-            {
-              "question": "What is a blockchain?",
-              "options": [
-                "A decentralized ledger",
-                "A centralized database",
-                "A web server",
-                "A type of programming language"
-              ],
-              "answer": "A decentralized ledger"
-            },
-            {
-              "question": "What is the first blockchain ever created?",
-              "options": ["Ethereum", "Bitcoin", "Cardano", "Solana"],
-              "answer": "Bitcoin"
-            }
-          ],
-          "medium": [
-            {
-              "question": "What is the primary consensus mechanism used by Bitcoin?",
-              "options": ["Proof of Stake", "Proof of Work", "Delegated Proof of Stake", "PBFT"],
-              "answer": "Proof of Work"
-            },
-            {
-              "question": "What is a smart contract?",
-              "options": [
-                "A self-executing contract with predefined rules",
-                "A legal agreement signed digitally",
-                "A financial agreement on the blockchain",
-                "A type of cryptocurrency wallet"
-              ],
-              "answer": "A self-executing contract with predefined rules"
-            }
-          ],
-          "hard": [
-            {
-              "question": "What is a Byzantine Fault Tolerance (BFT) in blockchain?",
-              "options": [
-                "A mechanism for handling node failures in a distributed system",
-                "A method to increase block size",
-                "A tool for managing gas fees",
-                "A cryptographic hashing algorithm"
-              ],
-              "answer": "A mechanism for handling node failures in a distributed system"
-            },
-            {
-              "question": "What is the Merkle root in a blockchain block?",
-              "options": [
-                "A hash representing all transactions in the block",
-                "The timestamp of the block",
-                "The ID of the miner",
-                "The public key of the node"
-              ],
-              "answer": "A hash representing all transactions in the block"
-            }
-          ]
-        }
-      }
-    ]
-  }
-  
+  "questions": [
+    {
+      "id": 1,
+     
+      "question": "What is Solidity primarily used for?",
+      "options": [
+        "Building websites",
+        "Creating mobile apps",
+        "Writing smart contracts",
+        "Developing databases"
+      ],
+      "answer": "Writing smart contracts",
+      "type": "easy"
+    },
+    {
+      "id": 2,
+      "question": "Which type is used for storing true/false values in Solidity?",
+      "options": [
+        "int",
+        "string",
+        "bool",
+        "uint"
+      ],
+      "answer": "bool",
+      "type": "easy"
+    },
+    {
+      "id": 3,
+      "question": "What is the default visibility of a function in Solidity?",
+      "options": [
+        "internal",
+        "public",
+        "private",
+        "external"
+      ],
+      "answer": "public",
+      "type": "medium"
+    },
+    {
+      "id": 4,
+      "question": "Which keyword is used to define a state variable in Solidity?",
+      "options": [
+        "state",
+        "storage",
+        "var",
+        "None of the above"
+      ],
+      "answer": "None of the above",
+      "type": "medium"
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is NOT a data type in Solidity?",
+      "options": [
+        "address",
+        "mapping",
+        "uint",
+        "float"
+      ],
+      "answer": "float",
+      "type": "easy"
+    },
+    {
+      "id": 6,
+      "question": "What does the 'msg.sender' represent in Solidity?",
+      "options": [
+        "The recipient of the transaction",
+        "The sender of the transaction",
+        "The contract owner",
+        "The miner of the block"
+      ],
+      "answer": "The sender of the transaction",
+      "type": "easy"
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is true about a fallback function?",
+      "options": [
+        "It must have a name",
+        "It must be payable",
+        "It has a return type",
+        "It handles invalid function calls"
+      ],
+      "answer": "It handles invalid function calls",
+      "type": "medium"
+    },
+    {
+      "id": 8,
+      "question": "Which keyword is used to send Ether to another address in Solidity?",
+      "options": [
+        "send",
+        "transfer",
+        "payable",
+        "Both 'send' and 'transfer'"
+      ],
+      "answer": "Both 'send' and 'transfer'",
+      "type": "medium"
+    },
+    {
+      "id": 9,
+      "question": "Which function modifier ensures a condition is met before executing the function?",
+      "options": [
+        "require",
+        "assert",
+        "revert",
+        "view"
+      ],
+      "answer": "require",
+      "type": "medium"
+    },
+    {
+      "id": 10,
+      "question": "What does the 'constructor' keyword define in a Solidity contract?",
+      "options": [
+        "A function that is called only once when the contract is deployed",
+        "A function that initializes state variables",
+        "A function that creates new contracts",
+        "A function that handles fallback scenarios"
+      ],
+      "answer": "A function that is called only once when the contract is deployed",
+      "type": "hard"
+    }
+  ]
+}
