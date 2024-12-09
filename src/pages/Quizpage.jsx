@@ -1,9 +1,16 @@
 import React from 'react'
+import { Routes, Route, useNavigate } from 'react-router-dom'
 import react, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
 import quizData from '../data/quizData.json'
+const navigate = useNavigate();
+const handelNav = () => {
+     
+  navigate('/questions');
+
+}
 
 const topics = ['Solidity', 'Rust', 'DeFi', 'BlockChain'];
 const levels = [
@@ -66,7 +73,7 @@ const QuizApp = () => {
 
        <div className='flex justify-between px-4'>
        <label className="font-semibold text-2xl text-[#8E44AD]">{lev.level}</label>
-        <button id="click">
+        <button id="click" >
         <FontAwesomeIcon className='text-2xl' icon={faCircleChevronRight} style={{color: "#8E44AD",}} />
         </button>
        </div>
