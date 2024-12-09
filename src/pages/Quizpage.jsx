@@ -5,21 +5,7 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
 // import quizData from '../data/quizData.json'
 
-const topics = ['Solidity', 'Rust', 'DeFi', 'BlockChain'];
-const levels = [
-  {
-    level: 'Easy',
-    route: '#'
-  },
-  {
-    level: 'Medium',
-    route: '#'
-  },
-  {
-    level: 'Hard',
-    route: '#'
-  }
-];
+const content = ['Solidity', 'Rust', 'DeFi', 'BlockChain'];
 
 const QuizApp = () => {
 
@@ -61,9 +47,7 @@ const QuizApp = () => {
       {levels.map((lev,index) =>
       <div
        key={index}
-       onClick={() => 
-        {toggleDropdown(lev)}
-      }
+       onClick={() => {toggleDropdown(lev)}}
        className={`cursor-pointer w-full lg:w-4/6 bg-white rounded-md shadow-lg mt-2 overflow-hidden transition-all duration-300 ease-in-out ${openDropdowns[topic] ? 'max-h-64 py-4' : 'max-h-0 py-0'}`}
      >
 
