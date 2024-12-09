@@ -2,9 +2,24 @@ import React from 'react'
 import react, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
 import quizData from '../data/quizData.json'
 
-const topics = ['Solidity', 'Rust', 'DeFi', 'BlockChain']
+const topics = ['Solidity', 'Rust', 'DeFi', 'BlockChain'];
+const levels = [
+  {
+    level: 'Easy',
+    route: '#'
+  },
+  {
+    level: 'Medium',
+    route: '#'
+  },
+  {
+    level: 'Hard',
+    route: '#'
+  }
+];
 
 const QuizApp = () => {
 
@@ -28,7 +43,7 @@ const QuizApp = () => {
 
   return (
     <div className="bg-black h-screen flex items-center justify-center flex-col">
-    <div className="w-full md:w-4/6 lg:w-5/6 px-4 h-fit gap-6 flex flex-col items-center justify-center">
+    <div className="w-full md:w-4/6 lg:w-5/6 px-4 h-fit gap-4 flex flex-col items-center justify-center">
       {topics.map((topic, index) => (
 
       <div key={index} className='w-full lg:w-5/6 h-fit flex flex-col items-center justify-center'>
@@ -42,15 +57,22 @@ const QuizApp = () => {
         </button>
       </div>
 
+
+      {levels.map((lev,index) =>
       <div
-       className={`w-full lg:w-4/6 bg-white rounded-md shadow-lg mt-4 overflow-hidden transition-all duration-300 ease-in-out ${openDropdowns[topic] ? 'max-h-64 py-4' : 'max-h-0 py-0'}`}
+       key={index}
+       className={`w-full lg:w-4/6 bg-white rounded-md shadow-lg mt-2 overflow-hidden transition-all duration-300 ease-in-out ${openDropdowns[topic] ? 'max-h-64 py-4' : 'max-h-0 py-0'}`}
      >
-       <ul className="space-y-2 px-4">
-         <li className="text-gray-800">Item 1</li>
-         <li className="text-gray-800">Item 2</li>
-         <li className="text-gray-800">Item 3</li>
-       </ul>
+
+       <div className='flex justify-between px-4'>
+       <label className="font-semibold text-2xl text-[#8E44AD]">{lev.level}</label>
+        <button id="click">
+        <FontAwesomeIcon className='text-2xl' icon={faCircleChevronRight} style={{color: "#8E44AD",}} />
+        </button>
+       </div>
+
      </div>
+     )}
      </div>
       ))}
 
