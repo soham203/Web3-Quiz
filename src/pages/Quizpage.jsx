@@ -3,7 +3,7 @@ import react, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
-import quizData from '../data/quizData.json'
+// import quizData from '../data/quizData.json'
 
 const topics = ['Solidity', 'Rust', 'DeFi', 'BlockChain'];
 const levels = [
@@ -61,7 +61,10 @@ const QuizApp = () => {
       {levels.map((lev,index) =>
       <div
        key={index}
-       className={`w-full lg:w-4/6 bg-white rounded-md shadow-lg mt-2 overflow-hidden transition-all duration-300 ease-in-out ${openDropdowns[topic] ? 'max-h-64 py-4' : 'max-h-0 py-0'}`}
+       onClick={() => 
+        {toggleDropdown(lev)}
+      }
+       className={`cursor-pointer w-full lg:w-4/6 bg-white rounded-md shadow-lg mt-2 overflow-hidden transition-all duration-300 ease-in-out ${openDropdowns[topic] ? 'max-h-64 py-4' : 'max-h-0 py-0'}`}
      >
 
        <div className='flex justify-between px-4'>
