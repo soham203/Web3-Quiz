@@ -8,10 +8,10 @@ import quizData from '../../../data/solData.json';
   const questionsPerPage = 5;
 
   // Filter for easy questions
-  const easyQuestions = quizData.solidity.hard;
+  const mediumQuestions = quizData.solidity.medium;
   
   // Get the current set of easy questions to display
-  const currentQuestions = easyQuestions.slice(0, questionsPerPage);
+  const currentQuestions = mediumQuestions.slice(0, questionsPerPage);
 
   return (
     <div>
