@@ -45,15 +45,26 @@ const QuizApp = () => {
             </div>
 
             <div
-              className={`cursor-pointer w-full lg:w-4/6 bg-white rounded-md shadow-lg mt-2 overflow-hidden transition-all duration-300 ease-in-out ${openDropdowns[topic] ? 'max-h-64 py-4' : 'max-h-0 py-0'}`}
+              className={`cursor-pointer w-full lg:w-4/6 bg-black rounded-md shadow-lg mt-2 overflow-hidden transition-all flex flex-col gap-2 duration-300 ease-in-out ${openDropdowns[topic] ? 'max-h-64 py-4' : 'max-h-0 py-0'}`}
             >
-              <div className='flex justify-between px-4'>
+              <div className='flex justify-between px-4 py-2 bg-white rounded-lg' onClick={handleEasy}>
                 <label className="font-semibold text-2xl text-[#8E44AD]">Easy</label>
-                <button id="click" onClick={handleEasy}>
+                <button id="click">
                   <FontAwesomeIcon className='text-2xl' icon={faCircleChevronRight} style={{ color: "#8E44AD" }} />
                 </button>
               </div>
-              {/* Add Medium and Hard buttons here if needed */}
+              <div className='flex justify-between px-4 py-2 bg-white rounded-lg' onClick={handleEasy}>
+                <label className="font-semibold text-2xl text-[#8E44AD]">Medium</label>
+                <button id="click" >
+                  <FontAwesomeIcon className='text-2xl' icon={faCircleChevronRight} style={{ color: "#8E44AD" }} />
+                </button>
+              </div>
+              <div className='flex justify-between px-4 py-2 bg-white rounded-lg' onClick={handleEasy}>
+                <label className="font-semibold text-2xl text-[#8E44AD]">Hard</label>
+                <button id="click">
+                  <FontAwesomeIcon className='text-2xl' icon={faCircleChevronRight} style={{ color: "#8E44AD" }} />
+                </button>
+              </div>
             </div>
           </div>
         ))}
