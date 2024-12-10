@@ -28,6 +28,12 @@ const QuizApp = () => {
   const handleEasy = () => {
     navigate('/solidityEasy'); // Correctly navigates to /questions
   };
+  const handleMedium = () => {
+    navigate('/solidityEasy'); // Correctly navigates to /questions
+  };
+  const handleHard = () => {
+    navigate('/solidityEasy'); // Correctly navigates to /questions
+  };
 
   return (
     <div className="bg-black h-screen flex items-center justify-center flex-col">
