@@ -3,15 +3,15 @@ import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
 
-const topics = ['Solidity', 'Rust', 'DeFi', 'BlockChain'];
+const topics = ['Solidity', 'Rust', 'DeFi', 'ZeroKnowledgeProof'];
 
 const QuizApp = () => {
-  const navigate = useNavigate(); // Move this inside the component
+  const navigate = useNavigate();
   const [openDropdowns, setOpenDropdowns] = useState({
     Solidity: false,
     Rust: false,
     DeFi: false,
-    BlockChain: false,
+    ZeroKnowledgeProof: false,
   });
 
   const toggleDropdown = (topic) => {
@@ -25,14 +25,9 @@ const QuizApp = () => {
     });
   };
 
-  const handleEasy = () => {
-    navigate('/solEasy'); // Correctly navigates to /questions
-  };
-  const handleMedium = () => {
-    navigate('/solmedium'); // Correctly navigates to /questions
-  };
-  const handleHard = () => {
-    navigate('/solhard'); // Correctly navigates to /questions
+  const handleLevelSelection = (topic, level) => {
+    // Navigate to the dynamic route for each topic/level
+    navigate(`/${topic.toLowerCase()}/${level.toLowerCase()}`);
   };
 
   return (
@@ -53,19 +48,19 @@ const QuizApp = () => {
             <div
               className={`cursor-pointer w-full lg:w-4/6 bg-black rounded-md shadow-lg mt-2 overflow-hidden transition-all flex flex-col gap-2 duration-300 ease-in-out ${openDropdowns[topic] ? 'max-h-64 py-4' : 'max-h-0 py-0'}`}
             >
-              <div className='flex justify-between px-4 py-2 bg-white rounded-lg' onClick={handleEasy}>
+              <div className='flex justify-between px-4 py-2 bg-white rounded-lg' onClick={() => handleLevelSelection(topic, 'Easy')}>
                 <label className="font-semibold text-2xl text-[#8E44AD]">Easy</label>
                 <button id="click">
                   <FontAwesomeIcon className='text-2xl' icon={faCircleChevronRight} style={{ color: "#8E44AD" }} />
                 </button>
               </div>
-              <div className='flex justify-between px-4 py-2 bg-white rounded-lg' onClick={handleMedium}>
+              <div className='flex justify-between px-4 py-2 bg-white rounded-lg' onClick={() => handleLevelSelection(topic, 'Medium')}>
                 <label className="font-semibold text-2xl text-[#8E44AD]">Medium</label>
-                <button id="click" >
+                <button id="click">
                   <FontAwesomeIcon className='text-2xl' icon={faCircleChevronRight} style={{ color: "#8E44AD" }} />
                 </button>
               </div>
-              <div className='flex justify-between px-4 py-2 bg-white rounded-lg' onClick={handleHard}>
+              <div className='flex justify-between px-4 py-2 bg-white rounded-lg' onClick={() => handleLevelSelection(topic, 'Hard')}>
                 <label className="font-semibold text-2xl text-[#8E44AD]">Hard</label>
                 <button id="click">
                   <FontAwesomeIcon className='text-2xl' icon={faCircleChevronRight} style={{ color: "#8E44AD" }} />

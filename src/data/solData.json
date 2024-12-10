@@ -14,106 +14,161 @@
       },
       {
         "id": 2,
-        "question": "Which type is used for storing true/false values in Solidity?",
+        "question": "Which of the following is a feature of Solidity?",
         "options": [
-          "int",
-          "string",
-          "bool",
-          "uint"
+          "Event handling",
+          "File system access",
+          "Multi-threading",
+          "Garbage collection"
         ],
-        "answer": "bool"
+        "answer": "Event handling"
+      },
+      {
+        "id": 3,
+        "question": "What is the Ethereum Virtual Machine (EVM) used for?",
+        "options": [
+          "Processing smart contracts",
+          "Mining Ether",
+          "Managing network nodes",
+          "Sending Ether between accounts"
+        ],
+        "answer": "Processing smart contracts"
+      },
+      {
+        "id": 4,
+        "question": "Which data type is used for storing addresses in Solidity?",
+        "options": [
+          "string",
+          "address",
+          "uint",
+          "bytes"
+        ],
+        "answer": "address"
       },
       {
         "id": 5,
-        "question": "Which of the following is NOT a data type in Solidity?",
+        "question": "What is the default visibility of functions in Solidity?",
         "options": [
-          "address",
-          "mapping",
-          "uint",
-          "float"
+          "public",
+          "private",
+          "internal",
+          "external"
         ],
-        "answer": "float"
-      },
-      {
-        "id": 6,
-        "question": "What does the 'msg.sender' represent in Solidity?",
-        "options": [
-          "The recipient of the transaction",
-          "The sender of the transaction",
-          "The contract owner",
-          "The miner of the block"
-        ],
-        "answer": "The sender of the transaction"
+        "answer": "public"
       }
     ],
     "medium": [
       {
-        "id": 3,
-        "question": "What is the default visibility of a function in Solidity?",
+        "id": 1,
+        "question": "Which of the following is a valid storage location for variables in Solidity?",
         "options": [
-          "internal",
-          "public",
-          "private",
-          "external"
+          "stack",
+          "storage",
+          "memory",
+          "all of the above"
         ],
-        "answer": "public"
+        "answer": "all of the above"
+      },
+      {
+        "id": 2,
+        "question": "What is the purpose of the 'require' statement in Solidity?",
+        "options": [
+          "To check for errors and revert transactions",
+          "To declare a variable",
+          "To define a contract",
+          "To manage events"
+        ],
+        "answer": "To check for errors and revert transactions"
+      },
+      {
+        "id": 3,
+        "question": "Which of the following is used to access the sender of a transaction in Solidity?",
+        "options": [
+          "msg.sender",
+          "tx.origin",
+          "this",
+          "block.coinbase"
+        ],
+        "answer": "msg.sender"
       },
       {
         "id": 4,
-        "question": "Which keyword is used to define a state variable in Solidity?",
+        "question": "Which keyword is used to define a contract in Solidity?",
         "options": [
-          "state",
-          "storage",
-          "var",
-          "None of the above"
+          "class",
+          "function",
+          "contract",
+          "module"
         ],
-        "answer": "None of the above"
+        "answer": "contract"
       },
       {
-        "id": 7,
-        "question": "Which of the following is true about a fallback function?",
+        "id": 5,
+        "question": "What is the purpose of the 'fallback' function in Solidity?",
         "options": [
-          "It must have a name",
-          "It must be payable",
-          "It has a return type",
-          "It handles invalid function calls"
+          "To accept Ether when a contract is called with invalid data",
+          "To transfer Ether to a contract",
+          "To deploy a contract to the blockchain",
+          "To handle errors"
         ],
-        "answer": "It handles invalid function calls"
-      },
-      {
-        "id": 8,
-        "question": "Which keyword is used to send Ether to another address in Solidity?",
-        "options": [
-          "send",
-          "transfer",
-          "payable",
-          "Both 'send' and 'transfer'"
-        ],
-        "answer": "Both 'send' and 'transfer'"
-      },
-      {
-        "id": 9,
-        "question": "Which function modifier ensures a condition is met before executing the function?",
-        "options": [
-          "require",
-          "assert",
-          "revert",
-          "view"
-        ],
-        "answer": "require"
+        "answer": "To accept Ether when a contract is called with invalid data"
       }
     ],
     "hard": [
       {
-        "id": 10,
-        "question": "What does the 'constructor' keyword define in a Solidity contract?",
+        "id": 1,
+        "question": "What is the purpose of the 'selfdestruct' function in Solidity?",
         "options": [
-          "A function that is called only once when the contract is deployed",
-          "A function that initializes state variables",
-          "A function that creates new contracts",
-          "A function that handles fallback scenarios"
+          "To delete a contract from the blockchain",
+          "To pause a contract's operations",
+          "To transfer funds from a contract",
+          "To create a new contract"
         ],
-        "answer": "A function that is called only once when the contract is deployed"
+        "answer": "To delete a contract from the blockchain"
+      },
+      {
+        "id": 2,
+        "question": "Which function allows a contract to send Ether to another address?",
+        "options": [
+          "transfer()",
+          "send()",
+          "call()",
+          "all of the above"
+        ],
+        "answer": "all of the above"
+      },
+      {
+        "id": 3,
+        "question": "What is the 'delegatecall' function used for in Solidity?",
+        "options": [
+          "To invoke a function from another contract in the context of the current contract",
+          "To create a new contract from another contract",
+          "To transfer Ether between contracts",
+          "To deploy a contract"
+        ],
+        "answer": "To invoke a function from another contract in the context of the current contract"
+      },
+      {
+        "id": 4,
+        "question": "What is the significance of 'gas' in Ethereum smart contracts?",
+        "options": [
+          "Gas is used to measure the amount of computation a transaction requires",
+          "Gas determines the speed of transactions",
+          "Gas is used to pay miners for validating transactions",
+          "Gas is the currency of Ethereum"
+        ],
+        "answer": "Gas is used to measure the amount of computation a transaction requires"
+      },
+      {
+        "id": 5,
+        "question": "What does the 'block.timestamp' variable return in Solidity?",
+        "options": [
+          "The timestamp of the latest block",
+          "The timestamp of the current block",
+          "The timestamp of the current transaction",
+          "The timestamp of the sender"
+        ],
+        "answer": "The timestamp of the current block"
       }
     ]
   }

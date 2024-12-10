@@ -1,7 +1,175 @@
 {
-    "rust": {
-    "easy": [],
-    "medium": [],
-    "hard": []
+  "rust": {
+    "easy": [
+      {
+        "id": 1,
+        "question": "What is Rust primarily used for?",
+        "options": [
+          "Web development",
+          "System programming",
+          "Machine learning",
+          "Mobile app development"
+        ],
+        "answer": "System programming"
+      },
+      {
+        "id": 2,
+        "question": "Which of the following is a key feature of Rust?",
+        "options": [
+          "Garbage collection",
+          "Memory safety without a garbage collector",
+          "Dynamic typing",
+          "Interpreted language"
+        ],
+        "answer": "Memory safety without a garbage collector"
+      },
+      {
+        "id": 3,
+        "question": "Which keyword is used to define a variable in Rust?",
+        "options": [
+          "var",
+          "let",
+          "define",
+          "const"
+        ],
+        "answer": "let"
+      },
+      {
+        "id": 4,
+        "question": "What is the purpose of the 'Cargo' tool in Rust?",
+        "options": [
+          "Building and managing Rust projects",
+          "Compiling Rust code",
+          "Running Rust code",
+          "Managing dependencies and libraries"
+        ],
+        "answer": "Building and managing Rust projects"
+      },
+      {
+        "id": 5,
+        "question": "Which type of memory does Rust's ownership system manage?",
+        "options": [
+          "Static memory",
+          "Dynamic memory",
+          "Heap memory",
+          "Stack memory"
+        ],
+        "answer": "Heap memory"
+      }
+    ],
+    "medium": [
+      {
+        "id": 1,
+        "question": "What is the ownership rule in Rust?",
+        "options": [
+          "A variable can have multiple owners",
+          "Each value can only have one owner at a time",
+          "Values are passed by reference by default",
+          "Rust does not support ownership"
+        ],
+        "answer": "Each value can only have one owner at a time"
+      },
+      {
+        "id": 2,
+        "question": "What is the 'Borrowing' concept in Rust?",
+        "options": [
+          "Transferring ownership of a variable",
+          "Allowing temporary access to a variable's data without taking ownership",
+          "Copying the entire variable's content to another variable",
+          "None of the above"
+        ],
+        "answer": "Allowing temporary access to a variable's data without taking ownership"
+      },
+      {
+        "id": 3,
+        "question": "In Rust, which of the following is used to handle errors?",
+        "options": [
+          "try-catch blocks",
+          "Result and Option types",
+          "Error objects",
+          "Exception handling"
+        ],
+        "answer": "Result and Option types"
+      },
+      {
+        "id": 4,
+        "question": "What does 'match' do in Rust?",
+        "options": [
+          "It compares two variables",
+          "It matches a value to a pattern and executes corresponding code",
+          "It is used for string matching",
+          "It checks if a variable is equal to a given value"
+        ],
+        "answer": "It matches a value to a pattern and executes corresponding code"
+      },
+      {
+        "id": 5,
+        "question": "What is the purpose of 'unsafe' code in Rust?",
+        "options": [
+          "To bypass Rust's safety checks for performance",
+          "To access external libraries",
+          "To allocate memory manually",
+          "To compile Rust code with warnings"
+        ],
+        "answer": "To bypass Rust's safety checks for performance"
+      }
+    ],
+    "hard": [
+      {
+        "id": 1,
+        "question": "What is a 'lifetime' in Rust?",
+        "options": [
+          "The time a variable exists in memory",
+          "A mechanism for tracking how long a reference is valid",
+          "The time a function execution takes",
+          "The time a thread runs in Rust"
+        ],
+        "answer": "A mechanism for tracking how long a reference is valid"
+      },
+      {
+        "id": 2,
+        "question": "What is the difference between 'clone()' and 'copy()' in Rust?",
+        "options": [
+          "clone() creates a deep copy, while copy() creates a shallow copy",
+          "clone() is used for strings only, while copy() is used for integers",
+          "clone() works for both owned and borrowed data, while copy() only works for owned data",
+          "clone() is used for integers, while copy() is used for strings"
+        ],
+        "answer": "clone() creates a deep copy, while copy() creates a shallow copy"
+      },
+      {
+        "id": 3,
+        "question": "What is the purpose of 'Send' and 'Sync' traits in Rust?",
+        "options": [
+          "They define how data can be safely transferred between threads",
+          "They define the method of cloning objects",
+          "They ensure all code in Rust is synchronous",
+          "They manage external system calls"
+        ],
+        "answer": "They define how data can be safely transferred between threads"
+      },
+      {
+        "id": 4,
+        "question": "How does Rust achieve memory safety without a garbage collector?",
+        "options": [
+          "By using reference counting",
+          "By using ownership, borrowing, and lifetimes",
+          "By locking memory during runtime",
+          "By using immutable data by default"
+        ],
+        "answer": "By using ownership, borrowing, and lifetimes"
+      },
+      {
+        "id": 5,
+        "question": "What does 'async' and 'await' keywords do in Rust?",
+        "options": [
+          "They enable multi-threading in Rust",
+          "They allow concurrent programming by making functions asynchronous",
+          "They allow parallel programming by running functions in parallel",
+          "They create a non-blocking thread"
+        ],
+        "answer": "They allow concurrent programming by making functions asynchronous"
+      }
+    ]
   }
 }
