@@ -26,13 +26,13 @@ const QuizApp = () => {
   };
 
   const handleEasy = () => {
-    navigate('/solidityEasy'); // Correctly navigates to /questions
+    navigate('/solEasy'); // Correctly navigates to /questions
   };
   const handleMedium = () => {
-    navigate('/solidityEasy'); // Correctly navigates to /questions
+    navigate('/solmedium'); // Correctly navigates to /questions
   };
   const handleHard = () => {
-    navigate('/solidityEasy'); // Correctly navigates to /questions
+    navigate('/solhard'); // Correctly navigates to /questions
   };
 
   return (
@@ -59,13 +59,13 @@ const QuizApp = () => {
                   <FontAwesomeIcon className='text-2xl' icon={faCircleChevronRight} style={{ color: "#8E44AD" }} />
                 </button>
               </div>
-              <div className='flex justify-between px-4 py-2 bg-white rounded-lg' onClick={handleEasy}>
+              <div className='flex justify-between px-4 py-2 bg-white rounded-lg' onClick={handleMedium}>
                 <label className="font-semibold text-2xl text-[#8E44AD]">Medium</label>
                 <button id="click" >
                   <FontAwesomeIcon className='text-2xl' icon={faCircleChevronRight} style={{ color: "#8E44AD" }} />
                 </button>
               </div>
-              <div className='flex justify-between px-4 py-2 bg-white rounded-lg' onClick={handleEasy}>
+              <div className='flex justify-between px-4 py-2 bg-white rounded-lg' onClick={handleHard}>
                 <label className="font-semibold text-2xl text-[#8E44AD]">Hard</label>
                 <button id="click">
                   <FontAwesomeIcon className='text-2xl' icon={faCircleChevronRight} style={{ color: "#8E44AD" }} />
