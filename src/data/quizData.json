@@ -1,9 +1,28 @@
 {
   "questions": [
     {
+      "solidity":[
+          "id": 1,
+     
+      "question": "What is Solidity primarily used for?",
+      
+      "options": [
+        "Building websites",
+        "Creating mobile apps",
+        "Writing smart contracts",
+        "Developing databases"
+      ],
+      "answer": "Writing smart contracts",
+      "type": "easy"
+
+      ]
+
+    },
+    {
       "id": 1,
      
       "question": "What is Solidity primarily used for?",
+      
       "options": [
         "Building websites",
         "Creating mobile apps",
@@ -122,4 +141,5 @@
       "type": "hard"
     }
   ]
+  
 }

@@ -5,6 +5,8 @@ import Navbar from './components/Navbar.jsx';
 import Questions from './pages/Questions.jsx';
 import Questions2 from './pages/Questions2.jsx';
 import SolidityEasy from './pages/Rust/easy/solidityEasy';
+import QuizPagination from './components/QuizPagination.jsx'
+
 function App() {
 
   return (
