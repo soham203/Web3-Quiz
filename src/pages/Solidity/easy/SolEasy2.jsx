@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import QuestionComp from '../../../components/QuestionComp';
-import quizData from '../../../data/quizData.json';
+import solData from '../../../data/solData.json';
 
- export default function SolidityEasy() {
+ export default function SolEasy2() {
   const [selectedOptions, setSelectedOptions] = useState({});
   
   const questionsPerPage = 5;
 
   // Filter for easy questions
-  const easyQuestions = quizData.questions.filter(question => question.type === "easy");
+  const easyQuestions = solData.solidity.easy;
   
   // Get the current set of easy questions to display
   const currentQuestions = easyQuestions.slice(0, questionsPerPage);
