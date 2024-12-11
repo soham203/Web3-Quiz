@@ -55,7 +55,62 @@
           "Stack memory"
         ],
         "answer": "Heap memory"
-      }
+      },
+      {
+        "id": 6,
+        "question": "Which company created the Rust programming language?",
+        "options": [
+          "Microsoft",
+          "Mozilla",
+          "Google",
+          "Apple"
+        ],
+        "answer": "Mozilla"
+      },
+      {
+        "id": 7,
+        "question": "What is the file extension for Rust source code?",
+        "options": [
+          ".rs",
+          ".rust",
+          ".rc",
+          ".r"
+        ],
+        "answer": ".rs"
+      },
+      {
+        "id": 8,
+        "question": "Which keyword is used to declare a constant in Rust?",
+        "options": [
+          "const",
+          "let",
+          "static",
+          "immutable"
+        ],
+        "answer": "const"
+      },
+      {
+        "id": 9,
+        "question": "What does the 'println!' macro do in Rust?",
+        "options": [
+          "It defines a new function",
+          "It creates a new string",
+          "It prints text to the console",
+          "It compiles the Rust program"
+        ],
+        "answer": "It prints text to the console"
+      },
+      {
+        "id": 10,
+        "question": "What is the default mutability of variables in Rust?",
+        "options": [
+          "Mutable",
+          "Immutable",
+          "Thread-safe",
+          "Uninitialized"
+        ],
+        "answer": "Immutable"
+      }      
     ],
     "medium": [
       {
@@ -112,7 +167,62 @@
           "To compile Rust code with warnings"
         ],
         "answer": "To bypass Rust's safety checks for performance"
-      }
+      },
+      {
+        "id": 6,
+        "question": "What is 'shadowing' in Rust?",
+        "options": [
+          "Reusing a variable name in the same scope",
+          "Copying data from one variable to another",
+          "Overriding a function",
+          "Hiding an imported module"
+        ],
+        "answer": "Reusing a variable name in the same scope"
+      },
+      {
+        "id": 7,
+        "question": "What does the 'unwrap()' method do on a Result or Option type?",
+        "options": [
+          "It forces the value out, panicking if it's None or Err",
+          "It converts the type to a string",
+          "It always returns the default value",
+          "It prevents runtime errors"
+        ],
+        "answer": "It forces the value out, panicking if it's None or Err"
+      },
+      {
+        "id": 8,
+        "question": "Which feature is used to handle concurrency in Rust?",
+        "options": [
+          "Threads and async programming",
+          "Garbage collection",
+          "Dynamic typing",
+          "Global variables"
+        ],
+        "answer": "Threads and async programming"
+      },
+      {
+        "id": 9,
+        "question": "What is the purpose of the 'trait' keyword in Rust?",
+        "options": [
+          "To define shared behavior between types",
+          "To implement inheritance",
+          "To create mutable references",
+          "To handle errors"
+        ],
+        "answer": "To define shared behavior between types"
+      },
+      {
+        "id": 10,
+        "question": "What does the 'mut' keyword indicate in Rust?",
+        "options": [
+          "A variable can be modified after initialization",
+          "The variable is immutable",
+          "The variable is thread-safe",
+          "The variable is temporary"
+        ],
+        "answer": "A variable can be modified after initialization"
+      }      
     ],
     "hard": [
       {
@@ -169,7 +279,62 @@
           "They create a non-blocking thread"
         ],
         "answer": "They allow concurrent programming by making functions asynchronous"
-      }
+      },
+      {
+        "id": 6,
+        "question": "What is the purpose of the 'Box<T>' type in Rust?",
+        "options": [
+          "To allocate data on the heap",
+          "To store data on the stack",
+          "To provide thread safety",
+          "To replace primitive types"
+        ],
+        "answer": "To allocate data on the heap"
+      },
+      {
+        "id": 7,
+        "question": "What does the 'impl' keyword in Rust do?",
+        "options": [
+          "Implements methods or traits for a type",
+          "Declares a new type",
+          "Initializes variables",
+          "Imports external libraries"
+        ],
+        "answer": "Implements methods or traits for a type"
+      },
+      {
+        "id": 8,
+        "question": "What is the role of 'Cow' (Clone on Write) in Rust?",
+        "options": [
+          "To optimize memory usage by cloning only when needed",
+          "To manage ownership in threads",
+          "To handle references with lifetimes",
+          "To perform deep cloning of objects"
+        ],
+        "answer": "To optimize memory usage by cloning only when needed"
+      },
+      {
+        "id": 9,
+        "question": "Which Rust feature prevents data races at compile time?",
+        "options": [
+          "Ownership and borrowing rules",
+          "Garbage collection",
+          "Mutex locks",
+          "Thread pooling"
+        ],
+        "answer": "Ownership and borrowing rules"
+      },
+      {
+        "id": 10,
+        "question": "What does the 'Rc<T>' type provide in Rust?",
+        "options": [
+          "Reference counting for shared ownership",
+          "Exclusive ownership of data",
+          "Immutable references only",
+          "Dynamic memory allocation"
+        ],
+        "answer": "Reference counting for shared ownership"
+      }      
     ]
   }
 }

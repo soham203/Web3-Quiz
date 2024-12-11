@@ -8,6 +8,13 @@ export default function QuestionComp({ question, selectedOptions, setSelectedOpt
       [question.id]: event.target.value, 
     });
   };
+  
+  const handleOptionClick = (option) => {
+    setSelectedOptions({
+      ...selectedOptions,
+      [question.id]: option,
+    });
+  };
 
   return (
     <div className="bg-black flex items-center justify-center">
@@ -28,7 +35,9 @@ export default function QuestionComp({ question, selectedOptions, setSelectedOpt
               <li
                 key={index}
                 className={`flex items-center p-2 rounded-md ${optionClasses}`}
+                onClick={() => handleOptionClick(option)}
               >
+               <div className='flex items-center'>
                 <input
                   type="radio"
                   id={`option${index + 1}-${question.id}`}
@@ -39,6 +48,7 @@ export default function QuestionComp({ question, selectedOptions, setSelectedOpt
                   className="mr-2 w-3 h-3 appearance-none border-2 border-gray-300 rounded-full checked:bg-[#8E44AD] focus:outline-none"
                 />
                 <label htmlFor={`option${index + 1}-${question.id}`}>{option}</label>
+                </div>
               </li>
             );
           })}

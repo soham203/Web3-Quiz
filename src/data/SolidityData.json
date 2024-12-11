@@ -114,7 +114,40 @@
         "question": "Which opcode does Solidity use for conditional jumps?",
         "options": ["JUMP", "CJUMP", "JUMPI", "CALL"],
         "answer": "JUMPI"
-      }
+      },
+      {
+        "id": 8,
+        "question": "What is the purpose of the 'event' keyword in Solidity?",
+        "options": [
+          "To define logs that can be emitted during contract execution",
+          "To call external functions",
+          "To trigger fallback functions",
+          "To define state variables"
+        ],
+        "answer": "To define logs that can be emitted during contract execution"
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between 'public' and 'external' functions in Solidity?",
+        "options": [
+          "Public functions can be called internally and externally, while external functions can only be called externally",
+          "Public functions are cheaper to call than external functions",
+          "External functions can be called internally, but public functions cannot",
+          "There is no difference"
+        ],
+        "answer": "Public functions can be called internally and externally, while external functions can only be called externally"
+      },
+      {
+        "id": 10,
+        "question": "What happens if a required condition in a 'require()' statement fails?",
+        "options": [
+          "The function continues execution",
+          "The transaction is reverted, and gas used is refunded",
+          "The contract is paused",
+          "An error is logged, but the transaction proceeds"
+        ],
+        "answer": "The transaction is reverted, and gas used is refunded"
+      }      
     ],
     "hard": [
       {
@@ -199,7 +232,29 @@
           "mod() onlyOwner() { _; }"
         ],
         "answer": "modifier onlyOwner() { _; }"
-      }
+      },
+      {
+        "id": 9,
+        "question": "What is the purpose of the 'abi.encodePacked()' function in Solidity?",
+        "options": [
+          "To generate a tightly packed representation of data",
+          "To encrypt the function arguments",
+          "To decode data stored in a smart contract",
+          "To hash data using keccak256"
+        ],
+        "answer": "To generate a tightly packed representation of data"
+      },
+      {
+        "id": 10,
+        "question": "How does the 'CREATE2' opcode enhance smart contract deployment?",
+        "options": [
+          "It allows predictable contract addresses based on a hash of deployer, salt, and bytecode",
+          "It ensures that contracts cannot be redeployed to the same address",
+          "It enables dynamic modification of smart contract bytecode after deployment",
+          "It optimizes gas consumption for deploying contracts"
+        ],
+        "answer": "It allows predictable contract addresses based on a hash of deployer, salt, and bytecode"
+      }      
     ]
   }
 }

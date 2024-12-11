@@ -26,7 +26,7 @@ export default function LandingPage() {
         </p>
         <div className='md:text-5xl pl-2 sm:text-4xl text-xl font-bold sm:pl-3 lg:text-3xl'>
         <Typewriter
-        words={['SOLIDITY', 'RUST', 'BLOCKCHAIN']}
+        words={['SOLIDITY', 'RUST', 'DeFi', 'ZKP']}
         loop={true}
         typeSpeed={120}
         deleteSpeed={140}
