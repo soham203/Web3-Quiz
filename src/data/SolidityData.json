@@ -1,0 +1,205 @@
+{
+  "solidity": {
+    "easy": [
+      {
+        "id": 1,
+        "question": "What is Solidity primarily used for?",
+        "options": ["Building websites", "Creating mobile apps", "Writing smart contracts", "Developing databases"],
+        "answer": "Writing smart contracts"
+      },
+      {
+        "id": 2,
+        "question": "Which type is used for storing true/false values in Solidity?",
+        "options": ["int", "string", "bool", "uint"],
+        "answer": "bool"
+      },
+      {
+        "id": 3,
+        "question": "Which keyword is used to restrict a function to be executed only by the owner?",
+        "options": ["payable", "external", "onlyOwner", "internal"],
+        "answer": "onlyOwner"
+      },
+      {
+        "id": 4,
+        "question": "Which data type would you use to store an Ethereum address?",
+        "options": ["string", "address", "bool", "uint"],
+        "answer": "address"
+      },
+      {
+        "id": 5,
+        "question": "What is the purpose of the 'memory' keyword in Solidity?",
+        "options": ["To store data permanently", "To store data temporarily during execution", "To modify state variables", "None of the above"],
+        "answer": "To store data temporarily during execution"
+      },
+      {
+        "id": 6,
+        "question": "Which of the following is NOT a visibility modifier in Solidity?",
+        "options": ["internal", "public", "global", "private"],
+        "answer": "global"
+      },
+      {
+        "id": 7,
+        "question": "How do you declare a constructor in Solidity?",
+        "options": ["function constructor()", "constructor()", "init()", "setup()"],
+        "answer": "constructor()"
+      },
+      {
+        "id": 8,
+        "question": "Which of the following is a global variable in Solidity?",
+        "options": ["block.timestamp", "global.time", "msg.now", "contract.block"],
+        "answer": "block.timestamp"
+      },
+      {
+        "id": 9,
+        "question": "Which of the following is NOT a type of function visibility in Solidity?",
+        "options": ["public", "external", "protected", "private"],
+        "answer": "protected"
+      },
+      {
+        "id": 10,
+        "question": "What keyword is used to inherit a contract in Solidity?",
+        "options": ["extends", "inherits", "import", "is"],
+        "answer": "is"
+      }
+    ],
+    "medium": [
+      {
+        "id": 1,
+        "question": "What is the default visibility of a function in Solidity?",
+        "options": ["internal", "public", "private", "external"],
+        "answer": "internal"
+      },
+      {
+        "id": 2,
+        "question": "How can you prevent a function from modifying the blockchain state?",
+        "options": ["Mark it as payable", "Use the pure or view keyword", "Declare it as private", "Use the onlyOwner modifier"],
+        "answer": "Use the pure or view keyword"
+      },
+      {
+        "id": 3,
+        "question": "What happens when a function marked as 'payable' is called?",
+        "options": ["It can send Ether to the contract", "It allows Ether to be received", "It modifies the state variable", "It only allows the owner to call it"],
+        "answer": "It allows Ether to be received"
+      },
+      {
+        "id": 4,
+        "question": "Which of the following correctly defines a mapping in Solidity?",
+        "options": [
+          "mapping(address => uint) public balances;",
+          "map(address, uint) balances;",
+          "dictionary(address, uint) balances;",
+          "list(address => uint) balances;"
+        ],
+        "answer": "mapping(address => uint) public balances;"
+      },
+      {
+        "id": 5,
+        "question": "What is the purpose of the 'fallback' function in Solidity?",
+        "options": ["To handle direct transfers of Ether to the contract", "To perform a self-destruct operation", "To initialize state variables", "To set up the contract's constructor"],
+        "answer": "To handle direct transfers of Ether to the contract"
+      },
+      {
+        "id": 6,
+        "question": "What is the difference between 'pure' and 'view' functions?",
+        "options": [
+          "Pure functions modify state, while view functions do not",
+          "View functions read state, but pure functions do not read or modify state",
+          "Pure functions can only be called externally, while view functions cannot",
+          "There is no difference"
+        ],
+        "answer": "View functions read state, but pure functions do not read or modify state"
+      },
+      {
+        "id": 7,
+        "question": "Which opcode does Solidity use for conditional jumps?",
+        "options": ["JUMP", "CJUMP", "JUMPI", "CALL"],
+        "answer": "JUMPI"
+      }
+    ],
+    "hard": [
+      {
+        "id": 1,
+        "question": "What does the 'constructor' keyword define in a Solidity contract?",
+        "options": [
+          "A function that is called only once when the contract is deployed",
+          "A function that initializes state variables",
+          "A function that creates new contracts",
+          "A function that handles fallback scenarios"
+        ],
+        "answer": "A function that is called only once when the contract is deployed"
+      },
+      {
+        "id": 2,
+        "question": "Which of the following correctly defines a self-destruct call in Solidity?",
+        "options": [
+          "selfdestruct(address payable recipient);",
+          "destroy(address recipient);",
+          "exit(address recipient);",
+          "kill(address payable recipient);"
+        ],
+        "answer": "selfdestruct(address payable recipient);"
+      },
+      {
+        "id": 3,
+        "question": "Which function is called when Ether is sent to a contract with no data?",
+        "options": ["constructor", "receive", "fallback", "payable"],
+        "answer": "receive"
+      },
+      {
+        "id": 4,
+        "question": "Which of the following is a reentrancy vulnerability?",
+        "options": [
+          "Calling a function recursively",
+          "Allowing multiple external calls before execution ends",
+          "Updating the state after calling an external contract",
+          "Using fallback for payments"
+        ],
+        "answer": "Allowing multiple external calls before execution ends"
+      },
+      {
+        "id": 5,
+        "question": "How do you prevent reentrancy attacks in Solidity?",
+        "options": [
+          "Use the 'onlyOwner' modifier",
+          "Use checks-effects-interactions pattern",
+          "Use 'msg.sender' for validation",
+          "Call the 'fallback' function"
+        ],
+        "answer": "Use checks-effects-interactions pattern"
+      },
+      {
+        "id": 6,
+        "question": "Which of the following is NOT a method to prevent integer overflow in Solidity?",
+        "options": [
+          "Use SafeMath library",
+          "Use Solidity 0.8.0 or higher",
+          "Use assertions to catch overflows",
+          "Set the maximum possible value for integers"
+        ],
+        "answer": "Set the maximum possible value for integers"
+      },
+      {
+        "id": 7,
+        "question": "What does the 'keccak256' function do?",
+        "options": [
+          "Hashes the input data",
+          "Encrypts the input data",
+          "Compresses the input data",
+          "Returns the address of a contract"
+        ],
+        "answer": "Hashes the input data"
+      },
+      {
+        "id": 8,
+        "question": "What is the correct syntax to define a modifier in Solidity?",
+        "options": [
+          "modifier onlyOwner() { _; }",
+          "onlyOwner modifier() { _; }",
+          "modifier() onlyOwner { _; }",
+          "mod() onlyOwner() { _; }"
+        ],
+        "answer": "modifier onlyOwner() { _; }"
+      }
+    ]
+  }
+}
