@@ -7,17 +7,25 @@ const QuizComponent = () => {
   const [questions, setQuestions] = useState([]); // Store questions filtered by difficulty
   const [currentPage, setCurrentPage] = useState(1);
   const [questionsPerPage] = useState(5); // Show 5 questions per page
-  const [selectedOptions, setSelectedOptions] = useState({}); // State for selected options
-
+ 
+  const [selectedOptions, setSelectedOptions] = useState(
+    questions.reduce((acc, question) => {
+      acc[question.id] = null; // or another default value
+      return acc;
+    }, {})
+  );
+  
   // Dynamically load the JSON file for the topic
   useEffect(() => {
     const loadQuestions = async () => {
       try {
         const data = await import(`../data/${topic}Data.json`);
         console.log('Loaded Data:', data);
-        
-        if (data.default && data.default[difficulty]) {
-          const filteredQuestions = data.default[difficulty]; 
+  
+        // Correcting the path to access the questions
+        if (data.default && data.default[topic] && data.default[topic][difficulty]) {
+          const filteredQuestions = data.default[topic][difficulty];
+          console.log('Filtered Questions:', filteredQuestions);
           setQuestions(filteredQuestions);
         } else {
           console.error(`No questions found for topic: ${topic} and difficulty: ${difficulty}`);
@@ -26,15 +34,17 @@ const QuizComponent = () => {
         console.error('Error loading questions:', error);
       }
     };
-
+  
     loadQuestions();
   }, [topic, difficulty]);
+  
 
   // Pagination logic
   const indexOfLastQuestion = currentPage * questionsPerPage;
   const indexOfFirstQuestion = indexOfLastQuestion - questionsPerPage;
-  const currentQuestions = questions.slice(indexOfFirstQuestion, indexOfLastQuestion); // Show 5 questions per page
-
+  const currentQuestions = questions.slice(indexOfFirstQuestion, indexOfLastQuestion);
+  console.log('Current Questions:', currentQuestions); // Log here
+  
   // Pagination controls
   const totalPages = Math.ceil(questions.length / questionsPerPage);
   const handlePageChange = (pageNumber) => setCurrentPage(pageNumber); // Change page number
