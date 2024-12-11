@@ -1,0 +1,176 @@
+{
+    "defi": {
+      "easy": [
+        {
+          "id": 1,
+          "question": "What does DeFi stand for?",
+          "options": [
+            "Decentralized Finance",
+            "Distributed Finance",
+            "Digital Financial Institutions",
+            "Decentralized Funding"
+          ],
+          "answer": "Decentralized Finance"
+        },
+        {
+          "id": 2,
+          "question": "Which of the following is a major advantage of DeFi?",
+          "options": [
+            "High interest rates",
+            "Decentralized control",
+            "Guaranteed returns",
+            "Centralized management"
+          ],
+          "answer": "Decentralized control"
+        },
+        {
+          "id": 3,
+          "question": "Which cryptocurrency is commonly used in DeFi applications?",
+          "options": [
+            "Bitcoin",
+            "Ethereum",
+            "Litecoin",
+            "Dogecoin"
+          ],
+          "answer": "Ethereum"
+        },
+        {
+          "id": 4,
+          "question": "What is a liquidity pool in DeFi?",
+          "options": [
+            "A group of decentralized exchanges",
+            "A collection of tokens locked in a smart contract to facilitate trading",
+            "A cryptocurrency mining pool",
+            "A decentralized lending platform"
+          ],
+          "answer": "A collection of tokens locked in a smart contract to facilitate trading"
+        },
+        {
+          "id": 5,
+          "question": "Which platform allows users to lend and borrow crypto assets in a decentralized way?",
+          "options": [
+            "Coinbase",
+            "Uniswap",
+            "Aave",
+            "PayPal"
+          ],
+          "answer": "Aave"
+        }
+      ],
+      "medium": [
+        {
+          "id": 1,
+          "question": "What is the primary purpose of a smart contract in DeFi?",
+          "options": [
+            "Execute actions automatically when certain conditions are met",
+            "Create new cryptocurrencies",
+            "Store private keys",
+            "Provide a backup for crypto assets"
+          ],
+          "answer": "Execute actions automatically when certain conditions are met"
+        },
+        {
+          "id": 2,
+          "question": "What is the term for the process of providing liquidity to a decentralized exchange?",
+          "options": [
+            "Staking",
+            "Yield farming",
+            "Liquidity mining",
+            "Borrowing"
+          ],
+          "answer": "Liquidity mining"
+        },
+        {
+          "id": 3,
+          "question": "Which decentralized exchange operates on the Ethereum blockchain?",
+          "options": [
+            "Uniswap",
+            "Binance",
+            "Kraken",
+            "Coinbase"
+          ],
+          "answer": "Uniswap"
+        },
+        {
+          "id": 4,
+          "question": "What does 'impermanent loss' refer to in DeFi?",
+          "options": [
+            "Loss of liquidity due to market volatility",
+            "Loss of access to tokens",
+            "Loss of income from staking",
+            "Permanent loss of assets"
+          ],
+          "answer": "Loss of liquidity due to market volatility"
+        },
+        {
+          "id": 5,
+          "question": "Which platform allows users to yield farm by providing liquidity to decentralized protocols?",
+          "options": [
+            "Aave",
+            "Compound",
+            "Yearn Finance",
+            "All of the above"
+          ],
+          "answer": "All of the above"
+        }
+      ],
+      "hard": [
+        {
+          "id": 1,
+          "question": "What is the purpose of a DAO (Decentralized Autonomous Organization) in DeFi?",
+          "options": [
+            "To centralize governance in the system",
+            "To automate financial decisions based on decentralized consensus",
+            "To create an artificial intelligence model",
+            "To develop new cryptocurrencies"
+          ],
+          "answer": "To automate financial decisions based on decentralized consensus"
+        },
+        {
+          "id": 2,
+          "question": "What is the risk of smart contract vulnerabilities in DeFi?",
+          "options": [
+            "Increased transaction fees",
+            "Potential loss of funds due to hacks or exploits",
+            "Limited liquidity",
+            "Reduced adoption of DeFi applications"
+          ],
+          "answer": "Potential loss of funds due to hacks or exploits"
+        },
+        {
+          "id": 3,
+          "question": "Which DeFi protocol introduced the concept of 'flash loans'?",
+          "options": [
+            "Aave",
+            "MakerDAO",
+            "Compound",
+            "Uniswap"
+          ],
+          "answer": "Aave"
+        },
+        {
+          "id": 4,
+          "question": "What does 'staking' involve in the DeFi ecosystem?",
+          "options": [
+            "Locking up cryptocurrency to support network operations and earn rewards",
+            "Transferring ownership of assets to a third party",
+            "Borrowing tokens to use as collateral",
+            "Purchasing tokens from decentralized exchanges"
+          ],
+          "answer": "Locking up cryptocurrency to support network operations and earn rewards"
+        },
+        {
+          "id": 5,
+          "question": "What is 'yield farming' in DeFi?",
+          "options": [
+            "Providing liquidity to decentralized protocols to earn rewards",
+            "Borrowing funds from decentralized protocols",
+            "Creating new cryptocurrencies",
+            "Trading between different decentralized exchanges"
+          ],
+          "answer": "Providing liquidity to decentralized protocols to earn rewards"
+        }
+      ]
+    }
+  }
+  
