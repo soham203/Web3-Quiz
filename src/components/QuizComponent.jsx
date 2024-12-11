@@ -51,9 +51,6 @@ const QuizComponent = () => {
 
   return (
     <div className="bg-black min-h-screen">
-      <h1 className="text-center text-4xl text-white mt-10">
-        {topic.toUpperCase()} - {difficulty.toUpperCase()} Quiz
-      </h1>
 
       {currentQuestions.length > 0 ? (
         currentQuestions.map((question, index) => (

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
 
-const topics = ['Solidity', 'Rust', 'DeFi', 'ZeroKnowledgeProof'];
+const topics = ['Solidity', 'Rust', 'DeFi', 'Zkp'];
 
 const QuizApp = () => {
   const navigate = useNavigate();
