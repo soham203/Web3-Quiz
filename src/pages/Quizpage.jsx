@@ -30,7 +30,7 @@ const QuizApp = () => {
   };
 
   return (
-    <div className="bg-black min-h-screen flex items-center justify-center flex-col">
+    <div className="bg-black mt-[-96px] w-full h-screen mx-auto flex items-center justify-center flex-col">
       <div className="w-full md:w-4/6 lg:w-5/6 px-4 gap-4 flex flex-col items-center justify-center">
         {topics.map((topic, index) => (
           <div key={index} className="w-full lg:w-5/6 flex flex-col items-center justify-center">
