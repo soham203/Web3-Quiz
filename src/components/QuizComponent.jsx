@@ -99,12 +99,12 @@ const QuizComponent = () => {
       {/* Score Popup */}
       {showScorePopup && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
+          <div className="bg-black text-white text-center p-6 rounded-lg shadow-lg flex flex-col justify-center w-3/6 lg:w-3/12">
             <h2 className="text-lg font-bold">Your Score</h2>
             <p className="text-xl">{score} out of {questions.length}</p>
             <button 
               onClick={() => setShowScorePopup(false)} 
-              className="mt-4 bg-[#8E44AD] text-white px-4 py-2 rounded"
+              className="mt-4 mx-auto w-3/6 bg-[#8E44AD] text-white px-4 py-2 rounded font-semibold text-lg hover:border-2 hover:border-white"
             >
               Close
             </button>
