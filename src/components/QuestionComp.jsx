@@ -1,14 +1,6 @@
-
 import React from 'react';
 
-export default function QuestionComp({ question, selectedOptions, setSelectedOptions }) {
-  const handleOptionChange = (event) => {
-    setSelectedOptions({
-      ...selectedOptions,
-      [question.id]: event.target.value, 
-    });
-  };
-  
+export default function QuestionComp({ question, selectedOptions, setSelectedOptions, submitted }) {
   const handleOptionClick = (option) => {
     setSelectedOptions({
       ...selectedOptions,
@@ -25,11 +17,17 @@ export default function QuestionComp({ question, selectedOptions, setSelectedOpt
           {question.options.map((option, index) => {
             const isSelected = selectedOptions[question.id] === option;
             const isCorrect = question.answer === option; 
-            const optionClasses = isSelected
-              ? isCorrect
-                ? 'bg-white text-[#8E44AD] border-4 border-green-500' // Green for correct option
-                : 'bg-white text-[#8E44AD] border-4 border-red-500' // Red for incorrect option
-              : 'bg-white text-[#8E44AD] hover:text-[#bc82d5]'; // Default style
+            
+            // **Apply logic only if quiz is submitted**
+            const optionClasses = submitted 
+              ? isCorrect 
+                ? 'border-4 border-green-500 bg-white text-[#8E44AD]' // **Correct answers are green**
+                : isSelected 
+                  ? 'border-4 border-red-500 bg-white text-[#8E44AD]' // **Incorrect selected options are red**
+                  : 'bg-white text-[#8E44AD]' // Default option style
+              : isSelected 
+                ? 'bg-white text-[#8E44AD]' // Option is selected but quiz not submitted
+                : 'bg-white text-[#8E44AD] hover:text-[#bc82d5]'; // Default style
 
             return (
               <li
@@ -37,17 +35,17 @@ export default function QuestionComp({ question, selectedOptions, setSelectedOpt
                 className={`flex items-center p-2 rounded-md ${optionClasses}`}
                 onClick={() => handleOptionClick(option)}
               >
-               <div className='flex items-center'>
-                <input
-                  type="radio"
-                  id={`option${index + 1}-${question.id}`}
-                  name={`question-${question.id}`}
-                  value={option}
-                  checked={isSelected}
-                  onChange={handleOptionChange}
-                  className="mr-2 w-3 h-3 appearance-none border-2 border-gray-300 rounded-full checked:bg-[#8E44AD] focus:outline-none"
-                />
-                <label htmlFor={`option${index + 1}-${question.id}`}>{option}</label>
+                <div className='flex items-center'>
+                  <input
+                    type="radio"
+                    id={`option${index + 1}-${question.id}`}
+                    name={`question-${question.id}`}
+                    value={option}
+                    checked={selectedOptions[question.id] === option}
+                    readOnly // **Make input read-only to avoid re-selection**
+                    className="mr-2 w-3 h-3 appearance-none border-2 border-gray-300 rounded-full checked:bg-[#8E44AD] focus:outline-none"
+                  />
+                  <label htmlFor={`option${index + 1}-${question.id}`}>{option}</label>
                 </div>
               </li>
             );
