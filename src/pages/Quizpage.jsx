@@ -50,7 +50,7 @@ const QuizApp = () => {
               }`}
             >
               {['easy', 'medium', 'hard'].map((level) => (
-                <div key={level} className='flex justify-between px-4 py-2 bg-white rounded-lg' onClick={() => handleLevelSelection(topic, level)}>
+                <div key={level} className='flex justify-between items-center px-4 py-2 bg-white rounded-lg' onClick={() => handleLevelSelection(topic, level)}>
                   <label className="font-semibold text-2xl text-[#8E44AD]">{level.charAt(0).toUpperCase() + level.slice(1)}</label>
                   <FontAwesomeIcon className='text-2xl' icon={faCircleChevronRight} style={{ color: "#8E44AD" }} />
                 </div>

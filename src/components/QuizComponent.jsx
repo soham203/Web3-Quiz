@@ -104,7 +104,7 @@ const QuizComponent = () => {
             <p className="text-xl">{score} out of {questions.length}</p>
             <button 
               onClick={() => setShowScorePopup(false)} 
-              className="mt-4 mx-auto w-3/6 bg-[#8E44AD] text-white px-4 py-2 rounded font-semibold text-lg hover:border-2 hover:border-white"
+              className="mt-4 mx-auto w-3/6 bg-[#8E44AD] text-white px-4 py-2 rounded font-semibold text-sm md:text-lg hover:border-2 hover:border-white"
             >
               Close
             </button>
