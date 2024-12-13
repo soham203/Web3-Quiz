@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <>
-    <div className='flex justify-between bg-black items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
+    <div className='flex justify-between bg-black items-center h-24 w-full px-4 text-white'>
        <h1 className='w-full text-3xl font-bold text-[#8E44AD]'>
         <Link to="/LandingPage">QuizChain</Link>
       </h1>

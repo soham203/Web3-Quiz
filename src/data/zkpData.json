@@ -1,0 +1,341 @@
+{
+    "zkp": {
+      "easy": [
+        {
+          "id": 1,
+          "question": "What is Zero-Knowledge Proof (ZKP)?",
+          "options": [
+            "A method of verifying a transaction without revealing the details",
+            "A protocol for encrypting data",
+            "A way of storing private keys securely",
+            "A method of increasing the computational speed of blockchain"
+          ],
+          "answer": "A method of verifying a transaction without revealing the details"
+        },
+        {
+          "id": 2,
+          "question": "Which cryptographic technique is commonly used in ZKPs?",
+          "options": [
+            "Public-key cryptography",
+            "Hash functions",
+            "Digital signatures",
+            "Symmetric encryption"
+          ],
+          "answer": "Public-key cryptography"
+        },
+        {
+          "id": 3,
+          "question": "What is the primary advantage of using ZKPs in blockchain?",
+          "options": [
+            "Faster transaction processing",
+            "Complete anonymity of participants",
+            "Scalability and privacy without compromising security",
+            "Instant confirmation of transactions"
+          ],
+          "answer": "Scalability and privacy without compromising security"
+        },
+        {
+          "id": 4,
+          "question": "In which blockchain is Zero-Knowledge Proof widely used?",
+          "options": [
+            "Bitcoin",
+            "Ethereum",
+            "Zcash",
+            "Ripple"
+          ],
+          "answer": "Zcash"
+        },
+        {
+          "id": 5,
+          "question": "What is a common use case of ZKPs?",
+          "options": [
+            "Increasing the speed of smart contracts",
+            "Allowing transactions to occur privately without revealing sensitive information",
+            "Minimizing gas fees on blockchain",
+            "Creating new cryptocurrencies"
+          ],
+          "answer": "Allowing transactions to occur privately without revealing sensitive information"
+        },
+        {
+          "id": 6,
+          "question": "What does ZKP stand for?",
+          "options": [
+            "Zero-Knowledge Proof",
+            "Zero Knowledge Privacy",
+            "Zero Knowledge Protocol",
+            "Zero Key Protection"
+          ],
+          "answer": "Zero-Knowledge Proof"
+        },
+        {
+          "id": 7,
+          "question": "Who are the two main participants in a Zero-Knowledge Proof?",
+          "options": [
+            "Prover and Verifier",
+            "Sender and Receiver",
+            "Signer and Validator",
+            "Miner and Staker"
+          ],
+          "answer": "Prover and Verifier"
+        },
+        {
+          "id": 8,
+          "question": "Which of the following is a key feature of Zero-Knowledge Proofs?",
+          "options": [
+            "Privacy and security",
+            "Faster transactions",
+            "Lower computational cost",
+            "Eliminating gas fees"
+          ],
+          "answer": "Privacy and security"
+        },
+        {
+          "id": 9,
+          "question": "In ZKP, what is the 'knowledge' being proven?",
+          "options": [
+            "That the prover knows a secret without revealing it",
+            "That the prover has a public key",
+            "That the verifier has all the transaction details",
+            "That the prover has completed a blockchain transaction"
+          ],
+          "answer": "That the prover knows a secret without revealing it"
+        },
+        {
+          "id": 10,
+          "question": "Which Zero-Knowledge Proof is commonly used in privacy-focused cryptocurrencies?",
+          "options": [
+            "zk-SNARKs",
+            "SHA-256",
+            "Elliptic Curve Cryptography",
+            "zk-Rollups"
+          ],
+          "answer": "zk-SNARKs"
+        }        
+      ],
+      "medium": [
+        {
+          "id": 1,
+          "question": "Which of the following ZKP protocols is known for its non-interactive nature?",
+          "options": [
+            "zk-SNARKs",
+            "zk-STARKs",
+            "Bulletproofs",
+            "All of the above"
+          ],
+          "answer": "zk-SNARKs"
+        },
+        {
+          "id": 2,
+          "question": "In ZKPs, what does 'soundness' refer to?",
+          "options": [
+            "The ability to detect invalid proofs",
+            "The speed at which proofs are generated",
+            "The privacy level of proofs",
+            "The difficulty in generating proofs"
+          ],
+          "answer": "The ability to detect invalid proofs"
+        },
+        {
+          "id": 3,
+          "question": "What is the concept of 'proof of knowledge' in ZKPs?",
+          "options": [
+            "The verifier does not learn anything except that the prover knows a valid secret",
+            "The prover can show their proof to the verifier",
+            "The verifier learns about the transaction details",
+            "The verifier is able to infer the private key"
+          ],
+          "answer": "The verifier does not learn anything except that the prover knows a valid secret"
+        },
+        {
+          "id": 4,
+          "question": "What does the term 'zero-knowledge' imply in Zero-Knowledge Proofs?",
+          "options": [
+            "The verifier knows the entire transaction",
+            "The prover does not reveal any private information during the verification",
+            "Only the verifier has the information",
+            "The prover and verifier both have the same private key"
+          ],
+          "answer": "The prover does not reveal any private information during the verification"
+        },
+        {
+          "id": 5,
+          "question": "Which of the following is a disadvantage of Zero-Knowledge Proofs?",
+          "options": [
+            "They are computationally expensive",
+            "They require large amounts of storage",
+            "They decrease blockchain speed",
+            "They eliminate all forms of privacy"
+          ],
+          "answer": "They are computationally expensive"
+        },
+        {
+          "id": 6,
+          "question": "What is a 'trusted setup' in ZKPs?",
+          "options": [
+            "A one-time setup process to create public and private keys for proofs",
+            "A blockchain node synchronization mechanism",
+            "A method for generating cryptographic hashes",
+            "A way to establish a secure network connection"
+          ],
+          "answer": "A one-time setup process to create public and private keys for proofs"
+        },
+        {
+          "id": 7,
+          "question": "Which property ensures that a prover cannot convince the verifier with a false statement in ZKP?",
+          "options": [
+            "Soundness",
+            "Completeness",
+            "Efficiency",
+            "Non-interactivity"
+          ],
+          "answer": "Soundness"
+        },
+        {
+          "id": 8,
+          "question": "What makes zk-STARKs more scalable compared to zk-SNARKs?",
+          "options": [
+            "They use hash functions instead of elliptic curve cryptography",
+            "They require no trusted setup",
+            "They are computationally lightweight",
+            "They reduce storage requirements"
+          ],
+          "answer": "They use hash functions instead of elliptic curve cryptography"
+        },
+        {
+          "id": 9,
+          "question": "Which blockchain network has integrated zk-Rollups to improve scalability?",
+          "options": [
+            "Ethereum",
+            "Bitcoin",
+            "Ripple",
+            "Cardano"
+          ],
+          "answer": "Ethereum"
+        },
+        {
+          "id": 10,
+          "question": "What is 'non-interactivity' in the context of ZKPs?",
+          "options": [
+            "The prover generates the proof without needing ongoing communication with the verifier",
+            "The verifier does not need to store the proof",
+            "The prover does not interact with the blockchain",
+            "The verifier can create a proof independently"
+          ],
+          "answer": "The prover generates the proof without needing ongoing communication with the verifier"
+        }        
+      ],
+      "hard": [
+        {
+          "id": 1,
+          "question": "What is the difference between zk-SNARKs and zk-STARKs?",
+          "options": [
+            "zk-STARKs do not require a trusted setup, unlike zk-SNARKs",
+            "zk-SNARKs are slower than zk-STARKs",
+            "zk-STARKs are used in Ethereum, while zk-SNARKs are used in Bitcoin",
+            "There is no difference between them"
+          ],
+          "answer": "zk-STARKs do not require a trusted setup, unlike zk-SNARKs"
+        },
+        {
+          "id": 2,
+          "question": "What is the main challenge of implementing Zero-Knowledge Proofs on blockchain networks?",
+          "options": [
+            "Complexity in designing the cryptographic proofs",
+            "Difficulty in generating large cryptographic keys",
+            "Slower transaction speeds due to validation",
+            "All of the above"
+          ],
+          "answer": "All of the above"
+        },
+        {
+          "id": 3,
+          "question": "What is 'preprocessing' in the context of zk-SNARKs?",
+          "options": [
+            "Generating the proof without any interaction between the prover and verifier",
+            "The preparation of data that allows zk-SNARK proofs to be verified quickly",
+            "Encrypting the data before sending it over the network",
+            "Compressing the transaction data to save space"
+          ],
+          "answer": "The preparation of data that allows zk-SNARK proofs to be verified quickly"
+        },
+        {
+          "id": 4,
+          "question": "What is the primary advantage of zk-STARKs over zk-SNARKs?",
+          "options": [
+            "Faster proof generation",
+            "Non-reliance on a trusted setup",
+            "Lower computational requirements",
+            "Lower storage requirements"
+          ],
+          "answer": "Non-reliance on a trusted setup"
+        },
+        {
+          "id": 5,
+          "question": "Which of the following best describes a use case for zk-SNARKs in Ethereum?",
+          "options": [
+            "Increasing transaction throughput",
+            "Verifying transactions without revealing sensitive information",
+            "Enabling smart contract execution",
+            "Tracking token transfers"
+          ],
+          "answer": "Verifying transactions without revealing sensitive information"
+        },
+        {
+          "id": 6,
+          "question": "How do zk-Rollups enhance Ethereum's scalability?",
+          "options": [
+            "By batching multiple transactions into a single proof",
+            "By reducing the block size",
+            "By introducing new consensus mechanisms",
+            "By increasing the gas limit per transaction"
+          ],
+          "answer": "By batching multiple transactions into a single proof"
+        },
+        {
+          "id": 7,
+          "question": "What is the purpose of polynomial commitment schemes in zk-STARKs?",
+          "options": [
+            "To ensure the integrity of data while keeping it hidden",
+            "To optimize gas fees in transactions",
+            "To encrypt transactions on the blockchain",
+            "To replace the need for trusted setups"
+          ],
+          "answer": "To ensure the integrity of data while keeping it hidden"
+        },
+        {
+          "id": 8,
+          "question": "Which cryptographic technique is fundamental to zk-STARKs?",
+          "options": [
+            "Merkle trees and hash functions",
+            "Elliptic curve pairings",
+            "Symmetric key cryptography",
+            "Quantum cryptography"
+          ],
+          "answer": "Merkle trees and hash functions"
+        },
+        {
+          "id": 9,
+          "question": "Which advanced property is specific to zk-SNARKs?",
+          "options": [
+            "Succinctness",
+            "Non-interactivity",
+            "Post-quantum resistance",
+            "Both succinctness and non-interactivity"
+          ],
+          "answer": "Both succinctness and non-interactivity"
+        },
+        {
+          "id": 10,
+          "question": "What is a significant challenge when scaling ZKP solutions like zk-SNARKs?",
+          "options": [
+            "High computational cost for generating proofs",
+            "Lack of compatibility with decentralized networks",
+            "Absence of privacy features",
+            "Difficulty in adapting to newer cryptographic standards"
+          ],
+          "answer": "High computational cost for generating proofs"
+        }        
+      ]
+    }
+  }
+  

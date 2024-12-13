@@ -1,0 +1,341 @@
+{
+    "defi": {
+      "easy": [
+        {
+          "id": 1,
+          "question": "What does DeFi stand for?",
+          "options": [
+            "Decentralized Finance",
+            "Distributed Finance",
+            "Digital Financial Institutions",
+            "Decentralized Funding"
+          ],
+          "answer": "Decentralized Finance"
+        },
+        {
+          "id": 2,
+          "question": "Which of the following is a major advantage of DeFi?",
+          "options": [
+            "High interest rates",
+            "Decentralized control",
+            "Guaranteed returns",
+            "Centralized management"
+          ],
+          "answer": "Decentralized control"
+        },
+        {
+          "id": 3,
+          "question": "Which cryptocurrency is commonly used in DeFi applications?",
+          "options": [
+            "Bitcoin",
+            "Ethereum",
+            "Litecoin",
+            "Dogecoin"
+          ],
+          "answer": "Ethereum"
+        },
+        {
+          "id": 4,
+          "question": "What is a liquidity pool in DeFi?",
+          "options": [
+            "A group of decentralized exchanges",
+            "A collection of tokens locked in a smart contract to facilitate trading",
+            "A cryptocurrency mining pool",
+            "A decentralized lending platform"
+          ],
+          "answer": "A collection of tokens locked in a smart contract to facilitate trading"
+        },
+        {
+          "id": 5,
+          "question": "Which platform allows users to lend and borrow crypto assets in a decentralized way?",
+          "options": [
+            "Coinbase",
+            "Uniswap",
+            "Aave",
+            "PayPal"
+          ],
+          "answer": "Aave"
+        },
+        {
+          "id": 6,
+          "question": "Which of the following is an example of a DeFi wallet?",
+          "options": [
+            "MetaMask",
+            "PayPal",
+            "Google Wallet",
+            "Apple Pay"
+          ],
+          "answer": "MetaMask"
+        },
+        {
+          "id": 7,
+          "question": "What technology powers DeFi applications?",
+          "options": [
+            "Smart contracts",
+            "Artificial intelligence",
+            "Centralized databases",
+            "Quantum computing"
+          ],
+          "answer": "Smart contracts"
+        },
+        {
+          "id": 8,
+          "question": "Which token standard is commonly used for DeFi tokens on Ethereum?",
+          "options": [
+            "ERC-20",
+            "ERC-721",
+            "BEP-2",
+            "XMR"
+          ],
+          "answer": "ERC-20"
+        },
+        {
+          "id": 9,
+          "question": "What is the purpose of a decentralized exchange (DEX)?",
+          "options": [
+            "To allow peer-to-peer trading without intermediaries",
+            "To provide centralized trading for large institutions",
+            "To store user funds in a central wallet",
+            "To mine cryptocurrencies"
+          ],
+          "answer": "To allow peer-to-peer trading without intermediaries"
+        },
+        {
+          "id": 10,
+          "question": "What type of financial services does DeFi replicate?",
+          "options": [
+            "Traditional banking services",
+            "Physical currency exchange",
+            "Manual bookkeeping",
+            "Retail management"
+          ],
+          "answer": "Traditional banking services"
+        }        
+      ],
+      "medium": [
+        {
+          "id": 1,
+          "question": "What is the primary purpose of a smart contract in DeFi?",
+          "options": [
+            "Execute actions automatically when certain conditions are met",
+            "Create new cryptocurrencies",
+            "Store private keys",
+            "Provide a backup for crypto assets"
+          ],
+          "answer": "Execute actions automatically when certain conditions are met"
+        },
+        {
+          "id": 2,
+          "question": "What is the term for the process of providing liquidity to a decentralized exchange?",
+          "options": [
+            "Staking",
+            "Yield farming",
+            "Liquidity mining",
+            "Borrowing"
+          ],
+          "answer": "Liquidity mining"
+        },
+        {
+          "id": 3,
+          "question": "Which decentralized exchange operates on the Ethereum blockchain?",
+          "options": [
+            "Uniswap",
+            "Binance",
+            "Kraken",
+            "Coinbase"
+          ],
+          "answer": "Uniswap"
+        },
+        {
+          "id": 4,
+          "question": "What does 'impermanent loss' refer to in DeFi?",
+          "options": [
+            "Loss of liquidity due to market volatility",
+            "Loss of access to tokens",
+            "Loss of income from staking",
+            "Permanent loss of assets"
+          ],
+          "answer": "Loss of liquidity due to market volatility"
+        },
+        {
+          "id": 5,
+          "question": "Which platform allows users to yield farm by providing liquidity to decentralized protocols?",
+          "options": [
+            "Aave",
+            "Compound",
+            "Yearn Finance",
+            "All of the above"
+          ],
+          "answer": "All of the above"
+        },
+        {
+          "id": 6,
+          "question": "Which of the following protocols specializes in decentralized lending and borrowing?",
+          "options": [
+            "Compound",
+            "PancakeSwap",
+            "SushiSwap",
+            "Ethereum"
+          ],
+          "answer": "Compound"
+        },
+        {
+          "id": 7,
+          "question": "What is 'collateral' in DeFi lending?",
+          "options": [
+            "Assets locked to secure a loan",
+            "The interest earned on a deposit",
+            "The blockchain where the transaction is recorded",
+            "The gas fee required for the transaction"
+          ],
+          "answer": "Assets locked to secure a loan"
+        },
+        {
+          "id": 8,
+          "question": "Which of the following chains is widely used for DeFi applications?",
+          "options": [
+            "Binance Smart Chain",
+            "Bitcoin Blockchain",
+            "Cardano",
+            "Solana"
+          ],
+          "answer": "Binance Smart Chain"
+        },
+        {
+          "id": 9,
+          "question": "What is the primary risk of yield farming in DeFi?",
+          "options": [
+            "Impermanent loss",
+            "Low returns",
+            "Long transaction times",
+            "High centralization"
+          ],
+          "answer": "Impermanent loss"
+        },
+        {
+          "id": 10,
+          "question": "Which protocol introduced the concept of 'liquidity pools'?",
+          "options": [
+            "Uniswap",
+            "Curve",
+            "Balancer",
+            "SushiSwap"
+          ],
+          "answer": "Uniswap"
+        }        
+      ],
+      "hard": [
+        {
+          "id": 1,
+          "question": "What is the purpose of a DAO (Decentralized Autonomous Organization) in DeFi?",
+          "options": [
+            "To centralize governance in the system",
+            "To automate financial decisions based on decentralized consensus",
+            "To create an artificial intelligence model",
+            "To develop new cryptocurrencies"
+          ],
+          "answer": "To automate financial decisions based on decentralized consensus"
+        },
+        {
+          "id": 2,
+          "question": "What is the risk of smart contract vulnerabilities in DeFi?",
+          "options": [
+            "Increased transaction fees",
+            "Potential loss of funds due to hacks or exploits",
+            "Limited liquidity",
+            "Reduced adoption of DeFi applications"
+          ],
+          "answer": "Potential loss of funds due to hacks or exploits"
+        },
+        {
+          "id": 3,
+          "question": "Which DeFi protocol introduced the concept of 'flash loans'?",
+          "options": [
+            "Aave",
+            "MakerDAO",
+            "Compound",
+            "Uniswap"
+          ],
+          "answer": "Aave"
+        },
+        {
+          "id": 4,
+          "question": "What does 'staking' involve in the DeFi ecosystem?",
+          "options": [
+            "Locking up cryptocurrency to support network operations and earn rewards",
+            "Transferring ownership of assets to a third party",
+            "Borrowing tokens to use as collateral",
+            "Purchasing tokens from decentralized exchanges"
+          ],
+          "answer": "Locking up cryptocurrency to support network operations and earn rewards"
+        },
+        {
+          "id": 5,
+          "question": "What is 'yield farming' in DeFi?",
+          "options": [
+            "Providing liquidity to decentralized protocols to earn rewards",
+            "Borrowing funds from decentralized protocols",
+            "Creating new cryptocurrencies",
+            "Trading between different decentralized exchanges"
+          ],
+          "answer": "Providing liquidity to decentralized protocols to earn rewards"
+        },
+        {
+          "id": 6,
+          "question": "What is the primary function of 'governance tokens' in DeFi?",
+          "options": [
+            "Allow holders to vote on protocol decisions",
+            "Provide discounts on trading fees",
+            "Generate staking rewards automatically",
+            "Secure the blockchain network"
+          ],
+          "answer": "Allow holders to vote on protocol decisions"
+        },
+        {
+          "id": 7,
+          "question": "What is 'slippage' in the context of DeFi trading?",
+          "options": [
+            "The difference between expected and executed trade prices",
+            "The loss of funds due to hacks",
+            "The delay in transaction confirmations",
+            "The fees charged for using decentralized exchanges"
+          ],
+          "answer": "The difference between expected and executed trade prices"
+        },
+        {
+          "id": 8,
+          "question": "Which DeFi protocol uses collateralized debt positions (CDPs) to mint stablecoins?",
+          "options": [
+            "MakerDAO",
+            "Aave",
+            "Compound",
+            "Uniswap"
+          ],
+          "answer": "MakerDAO"
+        },
+        {
+          "id": 9,
+          "question": "What is the role of 'flash loans' in DeFi?",
+          "options": [
+            "Unsecured loans that must be repaid within the same transaction",
+            "Long-term loans with no collateral",
+            "Loans provided only by centralized institutions",
+            "Loans for staking purposes"
+          ],
+          "answer": "Unsecured loans that must be repaid within the same transaction"
+        },
+        {
+          "id": 10,
+          "question": "Which of the following is an advanced risk when using DeFi platforms?",
+          "options": [
+            "Smart contract vulnerabilities",
+            "Guaranteed profits",
+            "Unchangeable interest rates",
+            "Low liquidity risks"
+          ],
+          "answer": "Smart contract vulnerabilities"
+        }        
+      ]
+    }
+  }
+  
