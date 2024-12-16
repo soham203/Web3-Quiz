@@ -1,4 +1,7 @@
-# QuizChain 🧠⛓️  
+# QuizChain 🧠⛓️
+
+![Screenshot 2024-11-30 162433](https://github.com/user-attachments/assets/2c9b9265-4a1a-421a-856f-2c88ddc429d5)
+
 **QuizChain** is a simple, interactive quiz platform built with React and Tailwind CSS. It allows users to play quizzes dynamically loaded from JSON files, providing an engaging and lightweight experience.  
 
 ---
